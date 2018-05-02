@@ -1,0 +1,62 @@
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Gateway</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">help</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><button [routerLink] = "['/register']" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span> Sign Up</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+
+<div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+        <div class="col-md-4" >
+      <form (submit)="loginUser($event)"  >
+        <div class= "input">
+          <div>
+          <label>UserName</label>
+          <input class="form-control" type="text" required>
+        </div>
+        </div>
+      <br>
+        <div class="input">
+          <div>
+          <label>Password</label>
+          <input class="form-control" type = "text" required>
+        </div>
+        </div>
+      <br>
+        <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+      
+        <div class="checkbox mb-3">
+          <br>
+         
+          <button class="btn btn-lg btn-primary btn-block" type="submit" value="login"> login
+           <!-- <input type="submit" value="login">-->
+          </button>
+        </div>
+      </form>
+      </div>
+      <div class="col-md-4"></div>
+      </div>
+      </div>
